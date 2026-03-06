@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>JobFind Latam — Empleos en el Extranjero</title>
+  <meta name="description" content="Encuentra empleos en Canadá, Australia, Europa y más. Sube tu CV, lo traducimos al inglés, alemán, sueco, italiano, afrikáans y conectamos con empleadores."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/css/app.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="/" class="nav-logo"><i class="fas fa-briefcase"></i><span>JobFind <span class="logo-sub">Latam</span></span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#como">Cómo Funciona</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#aplicar" class="btn btn-primary btn-sm">Aplicar Ahora</a>
+      <div class="lang-selector">
+        <button class="lang-btn" onclick="toggleLang()"><i class="fas fa-globe"></i> <span id="curLang">ES</span></button>
+        <div class="lang-menu" id="langMenu">
+          <a onclick="setLang('es')">🇦🇷 Español</a>
+          <a onclick="setLang('pt')">🇧🇷 Português</a>
+          <a onclick="setLang('en')">🇺🇸 English</a>
+          <a onclick="setLang('de')">🇩🇪 Deutsch</a>
+          <a onclick="setLang('sv')">🇸🇪 Svenska</a>
+          <a onclick="setLang('it')">🇮🇹 Italiano</a>
+          <a onclick="setLang('af')">🇿🇦 Afrikaans</a>
+        </div>
+      </div>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-badge"><i class="fas fa-earth-americas"></i> Empleos Internacionales · Argentina · Brasil · Chile · Sudáfrica</div>
+    <h1 class="hero-title">Tu Próximo Empleo<br><span class="hero-em">Está en el Extranjero</span></h1>
+    <p class="hero-sub">Conectamos trabajadores de Latinoamérica y Sudáfrica con empleadores legítimos en Canadá, Australia, Europa y más. Subí tu CV, lo traducimos automáticamente y te presentamos las mejores oportunidades.</p>
+    <div class="hero-free"><i class="fas fa-shield-halved"></i> Confidencial · Seguro · Tu información solo visible para empleadores verificados</div>
+    <div class="hero-actions">
+      <a href="#aplicar" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Aplicar Ahora</a>
+      <a href="#como" class="btn btn-outline-light btn-lg"><i class="fas fa-play-circle"></i> Cómo Funciona</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><i class="fas fa-globe"></i><span>7</span><small>Idiomas</small></div>
+      <div class="hstat"><i class="fas fa-building"></i><span>50+</span><small>Empleadores</small></div>
+      <div class="hstat"><i class="fas fa-map-marker-alt"></i><span>15+</span><small>Países</small></div>
+      <div class="hstat"><i class="fas fa-users"></i><span>100%</span><small>Confidencial</small></div>
+    </div>
+  </div>
+  <div class="scroll-ind"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="section-steps" id="como">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge"><i class="fas fa-list-ol"></i> Proceso</div>
+      <h2>¿Cómo Funciona?</h2>
+      <p>En 4 pasos simples podés estar trabajando en el extranjero.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-num">1</div><i class="fas fa-user-plus step-icon"></i><h4>Completá tu CV</h4><p>Nombre, foto, DNI, calificaciones, experiencia y sector deseado. Breve y preciso.</p></div>
+      <div class="step-card"><div class="step-num">2</div><i class="fas fa-language step-icon"></i><h4>Traducción Automática</h4><p>Con un botón, tu CV se traduce al inglés, alemán, sueco, italiano o afrikáans.</p></div>
+      <div class="step-card"><div class="step-num">3</div><i class="fas fa-paper-plane step-icon"></i><h4>Te Presentamos</h4><p>Enviamos tu CV a empleadores legítimos en Canadá, Australia, Europa y más.</p></div>
+      <div class="step-card"><div class="step-num">4</div><i class="fas fa-plane step-icon"></i><h4>¡Nueva Aventura!</h4><p>Recibís una oferta, contrato de 1-2 años, beneficios, vacaciones. ¡Viajá!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORES -->
+<section class="section-sectors" id="sectores">
+  <div class="container">
+    <div class="section-header light">
+      <div class="section-badge light"><i class="fas fa-th-large"></i> Sectores</div>
+      <h2>Categorías de Empleo</h2>
+      <p>Seleccioná tu sector y encontrá oportunidades reales.</p>
+    </div>
+    <div class="sectors-grid">
+      <div class="sector-card"><i class="fas fa-stethoscope"></i><h4>Salud</h4><p>Médicos, odontólogos, enfermeros, dentistas, cuidadores de adultos mayores.</p></div>
+      <div class="sector-card"><i class="fas fa-wrench"></i><h4>Artesanos</h4><p>Electricistas, plomeros, ebanistas, techadores, refrigeristas, soldadores.</p></div>
+      <div class="sector-card"><i class="fas fa-hard-hat"></i><h4>Construcción</h4><p>Constructores, albañiles, pintores, carpinteros, operadores de maquinaria.</p></div>
+      <div class="sector-card"><i class="fas fa-truck"></i><h4>Transporte</h4><p>Camioneros, conductores, operadores de logística, distribución.</p></div>
+      <div class="sector-card"><i class="fas fa-tractor"></i><h4>Agrícola</h4><p>Trabajadores rurales, cosechadores, operadores agrícolas, ganadería.</p></div>
+      <div class="sector-card"><i class="fas fa-chalkboard-teacher"></i><h4>Educación</h4><p>Maestros, profesores, tutores de español/portugués, instructores.</p></div>
+      <div class="sector-card"><i class="fas fa-cogs"></i><h4>Ingeniería</h4><p>Ingenieros civiles, mecánicos, eléctricos, técnicos especializados.</p></div>
+      <div class="sector-card"><i class="fas fa-broom"></i><h4>Limpieza</h4><p>Limpieza general, hotelería, mantenimiento de edificios, domésticos.</p></div>
+      <div class="sector-card"><i class="fas fa-hands-helping"></i><h4>Cuidados</h4><p>Cuidadores de ancianos, asistentes de salud, enfermería domiciliaria.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINOS -->
+<section class="section-destinations" id="destinos">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge"><i class="fas fa-map-marked-alt"></i> Destinos</div>
+      <h2>¿A Dónde Podés Ir?</h2>
+      <p>Empleadores verificados en estos países y regiones.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card"><span class="dest-flag">🇨🇦</span><h4>Canadá</h4><p>Alta demanda, buenos salarios, reembolso de pasaje tras 1 año.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇦🇺</span><h4>Australia</h4><p>Sector agrícola y construcción. Contratos de 1-2 años.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇬🇧</span><h4>Gran Bretaña</h4><p>Salud, ingeniería y servicios. Buenas condiciones laborales.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇩🇪</span><h4>Alemania</h4><p>Artesanos y técnicos muy demandados. Excelentes beneficios.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇸🇪</span><h4>Suecia</h4><p>Calidad de vida excepcional. Sector salud y tecnología.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇮🇹</span><h4>Italia</h4><p>Agrícola, hotelería y construcción. Cultura cercana.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇿🇦</span><h4>Sudáfrica</h4><p>Oportunidades para afrikaners y hispanohablantes.</p></div>
+      <div class="dest-card"><span class="dest-flag">🇪🇺</span><h4>Otros (Europa)</h4><p>Francia, Holanda, España, Portugal y más según demanda.</p></div>
+    </div>
+    <div class="dest-note"><i class="fas fa-info-circle"></i> Los salarios en el extranjero permiten reembolsar gastos de pasaje en 2-3 meses. Ahorrá, volvé e iniciá tu propio negocio. ¡Totalmente posible!</div>
+  </div>
+</section>
+
+<!-- FORMULARIO CV -->
+<section class="section-apply" id="aplicar">
+  <div class="container">
+    <div class="section-header light">
+      <div class="section-badge light"><i class="fas fa-file-alt"></i> CV</div>
+      <h2>Completá tu CV</h2>
+      <p>Tu información es 100% confidencial. Solo será compartida con empleadores legítimos verificados.</p>
+    </div>
+    <div class="form-card">
+      <form id="cvForm" onsubmit="submitCV(event)">
+
+        <h3 class="form-section-title"><i class="fas fa-user"></i> Datos Personales</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Nombre Completo *</label><input type="text" id="fullName" required placeholder="Juan Pérez"/></div>
+          <div class="form-group"><label>Edad *</label><input type="number" id="age" required min="18" max="65" placeholder="30"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Número de DNI / ID *</label><input type="text" id="idNumber" required placeholder="12.345.678"/></div>
+          <div class="form-group"><label>País de Nacimiento *</label>
+            <select id="country" required>
+              <option value="">Seleccioná</option>
+              <option value="AR">Argentina</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="UY">Uruguay</option>
+              <option value="ZA">Sudáfrica (Afrikaner)</option>
+              <option value="PY">Paraguay</option>
+              <option value="CO">Colombia</option>
+              <option value="PE">Perú</option>
+              <option value="OTHER">Otro país Latam</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email *</label><input type="email" id="email" required placeholder="tu@email.com"/></div>
+          <div class="form-group"><label>WhatsApp *</label><input type="tel" id="whatsapp" required placeholder="+54 9 11 1234-5678"/></div>
+        </div>
+
+        <h3 class="form-section-title"><i class="fas fa-graduation-cap"></i> Calificaciones y Experiencia</h3>
+        <div class="form-group"><label>Calificación más alta / Escuela *</label><input type="text" id="qualification" required placeholder="Ej: Técnico Electricista - Escuela Técnica N°5"/></div>
+        <div class="form-group"><label>Sector de Empleo Deseado *</label>
+          <select id="sector" required>
+            <option value="">Seleccioná tu sector</option>
+            <option value="health">Salud (Médico, Enfermero, Dentista, Cuidador)</option>
+            <option value="trades">Artesano (Electricista, Plomero, Ebanista, Techador)</option>
+            <option value="construction">Construcción (Albañil, Pintor, Carpintero)</option>
+            <option value="transport">Transporte (Camionero, Conductor, Logística)</option>
+            <option value="agriculture">Agrícola (Trabajador Rural, Cosecha, Ganadería)</option>
+            <option value="education">Educación (Maestro, Profesor, Tutor)</option>
+            <option value="engineering">Ingeniería (Civil, Mecánico, Eléctrico, Técnico)</option>
+            <option value="cleaning">Limpieza (General, Hotelería, Mantenimiento)</option>
+            <option value="care">Cuidados (Ancianos, Asistente de Salud)</option>
+            <option value="other">Otro</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Experiencia Laboral (breve descripción) *</label><textarea id="experience" required rows="3" maxlength="500" placeholder="Describí brevemente tu experiencia laboral..."></textarea></div>
+        <div class="form-row">
+          <div class="form-group"><label>¿Antecedentes Penales? *</label>
+            <select id="criminal" required>
+              <option value="">Seleccioná</option>
+              <option value="no">No</option>
+              <option value="yes">Sí (describir abajo)</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Si respondió Sí, descripción breve:</label><input type="text" id="criminalDesc" placeholder="Opcional - descripción breve"/></div>
+        </div>
+
+        <h3 class="form-section-title"><i class="fas fa-map-marked-alt"></i> Destino y Preferencias</h3>
+        <div class="form-group"><label>¿Dónde te gustaría trabajar? (marcá todos los que apliquen) *</label>
+          <div class="check-grid">
+            <label class="check-item"><input type="checkbox" name="dest" value="canada"/> 🇨🇦 Canadá</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="australia"/> 🇦🇺 Australia</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="uk"/> 🇬🇧 Gran Bretaña</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="germany"/> 🇩🇪 Alemania</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="sweden"/> 🇸🇪 Suecia</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="italy"/> 🇮🇹 Italia</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="europe_other"/> 🇪🇺 Otra Europa</label>
+            <label class="check-item"><input type="checkbox" name="dest" value="any"/> 🌍 Cualquier país</label>
+          </div>
+        </div>
+
+        <h3 class="form-section-title"><i class="fas fa-heart"></i> Describite</h3>
+        <div class="form-group"><label>Describite en 5 oraciones *</label><textarea id="description" required rows="4" maxlength="600" placeholder="Soy una persona trabajadora, honesta..."></textarea></div>
+        <div class="check-grid personal-traits">
+          <label class="check-item"><input type="checkbox" name="trait" value="loyal"/> Leal</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="hardworker"/> Trabajador</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="honest"/> Honesto</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="friendly"/> Amigable</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="cheerful"/> Alegre</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="reliable"/> Confiable</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="healthy"/> Saludable</label>
+          <label class="check-item"><input type="checkbox" name="trait" value="flexible"/> Flexible</label>
+        </div>
+
+        <h3 class="form-section-title"><i class="fas fa-upload"></i> Documentos</h3>
+        <div class="form-group"><label>Foto Personal *</label>
+          <div class="file-drop" onclick="document.getElementById('fPhoto').click()"><i class="fas fa-camera"></i><span>Clic para subir foto</span></div>
+          <input type="file" id="fPhoto" accept="image/*" style="display:none" required/>
+        </div>
+        <div class="form-group"><label>DNI / Documento de Identidad *</label>
+          <div class="file-drop" onclick="document.getElementById('fId').click()"><i class="fas fa-id-card"></i><span>Clic para subir DNI (foto o PDF)</span></div>
+          <input type="file" id="fId" accept="image/*,.pdf" style="display:none" required/>
+        </div>
+        <div class="form-group"><label>Calificaciones / Certificados (opcional)</label>
+          <div class="file-drop" onclick="document.getElementById('fCerts').click()"><i class="fas fa-certificate"></i><span>Clic para subir certificados</span></div>
+          <input type="file" id="fCerts" accept="image/*,.pdf" style="display:none" multiple/>
+        </div>
+        <div class="form-group"><label>Cartas de Recomendación (opcional)</label>
+          <div class="file-drop" onclick="document.getElementById('fRecs').click()"><i class="fas fa-envelope-open-text"></i><span>Clic para subir recomendaciones</span></div>
+          <input type="file" id="fRecs" accept="image/*,.pdf" style="display:none" multiple/>
+        </div>
+
+        <h3 class="form-section-title"><i class="fas fa-handshake"></i> Acuerdos</h3>
+        <div class="agreements">
+          <label class="check-item agreement"><input type="checkbox" id="agree1" required/> Prometo ser leal, honesto y trabajador. Mantenerme humilde y agradecer que los trabajos son escasos. Seré amable y flexible. Recuerdo que soy un invitado en otro país.</label>
+          <label class="check-item agreement"><input type="checkbox" id="agree2" required/> Acepto que esta agencia envíe mi CV a empleadores potenciales. La agencia recibirá una comisión según las circunstancias y el país.</label>
+          <label class="check-item agreement"><input type="checkbox" id="agree3" required/> Prometo cumplir con las leyes del país al que voy y seguir las instrucciones y políticas de la compañía que me emplee.</label>
+          <label class="check-item agreement"><input type="checkbox" id="agree4" required/> Entiendo que mi información es confidencial y solo será compartida con empleadores legítimos verificados.</label>
+        </div>
+
+        <div id="formMsg" class="form-msg" style="display:none"></div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn"><i class="fas fa-paper-plane"></i> Enviar mi CV</button>
+        </div>
+        <p class="form-note"><i class="fas fa-lock"></i> Tu información es 100% confidencial y protegida. Solo empleadores verificados la verán.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- MOTIVATIONAL -->
+<section class="section-motivation">
+  <div class="container">
+    <div class="motiv-card">
+      <i class="fas fa-plane-departure motiv-icon"></i>
+      <h3>¿Estás listo para una nueva y maravillosa aventura?</h3>
+      <p>Aprender un poco de inglés te ayudará mucho. Los traductores modernos harán que las comunicaciones sean fáciles, así que no te preocupes. Disfrutá tu viaje al extranjero. Ahorrá tu dinero, volvé e iniciá tu propio negocio. ¡Totalmente posible si trabajás con dedicación!</p>
+    </div>
+  </div>
+</section>
+
+<!-- RED DE SITIOS -->
+<section class="section-network">
+  <div class="container">
+    <div class="section-header"><div class="section-badge"><i class="fas fa-link"></i> Red</div><h2>Nuestra Red de Sitios</h2></div>
+    <div class="network-grid">
+      <a href="https://campolatam.centralchat.pro" target="_blank" class="net-card"><div class="nc-icon" style="background:#d1fae5"><i class="fas fa-map" style="color:#065f46"></i></div><div class="nc-info"><strong>Campo Latam</strong><span>Campos y granjas de Sudamérica</span></div><i class="fas fa-arrow-right nc-arr"></i></a>
+      <a href="https://tribu.centralchat.pro" target="_blank" class="net-card"><div class="nc-icon" style="background:#d1fae5"><i class="fas fa-users" style="color:#065f46"></i></div><div class="nc-info"><strong>Tribu</strong><span>Agricultura comunitaria · Vida tribal</span></div><i class="fas fa-arrow-right nc-arr"></i></a>
+      <a href="https://messianic.centralchat.pro" target="_blank" class="net-card"><div class="nc-icon" style="background:#fef3c7"><i class="fas fa-star-of-david" style="color:#92400e"></i></div><div class="nc-info"><strong>Messianic Yeshua</strong><span>Asociación Cristiana Mesiánica</span></div><i class="fas fa-arrow-right nc-arr"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand"><i class="fas fa-briefcase"></i><span>JobFind Latam</span></div>
+      <p>Conectando talento latinoamericano con oportunidades globales 🌍</p>
+      <div class="footer-links">
+        <a href="#como">Cómo Funciona</a>
+        <a href="#sectores">Sectores</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#aplicar">Aplicar</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
